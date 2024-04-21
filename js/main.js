@@ -16,8 +16,29 @@ console.log(message.slice(1, 3));
 var newStr = message.slice(4, 7);
 console.log(newStr);
 
-// Examples
-var string = "эТЯ СТроКА сРазНЫм РЕГистРом симВОЛоВ";
+// String examples
+var string = "эТЯ стРОка сРазНЫм РЕГистРом симВОЛоВ";
 var firstChar = string[0].toUpperCase();
 var newString = firstChar + string.slice(1).toLowerCase();
 console.log(newString);
+
+// Boolean
+var p = true;
+var q = false;
+var a = 10;
+var b = 5;
+console.log("p = " + p);
+console.log("q = " + q);
+console.log("a = " + a);
+console.log("b = " + b);
+console.log("!q = " + !q);
+console.log("p || q = " + (p || q));
+console.log("p && q = " + (p && q));
+console.log("a > b -> " + (a > b));
+console.log("a < b -> " + (a < b));
+console.log("a >= b -> " + (a >= b));
+console.log("a <= b -> " + (a <= b));
+console.log("a === b -> " + (a === b));    // Сравнить 2 числа
+console.log("a === 10 -> " + (a === 10));
+console.log("a == '10' -> " + (a == '10'));    // Сравнить число и строку, которая переводится в число
+console.log("a !== b -> " + (a !== b));
