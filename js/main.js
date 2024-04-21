@@ -41,34 +41,57 @@
 // console.log("a == '10' -> " + (a == '10'));    // Сравнить число и строку, которая переводится в число
 // console.log("a !== b -> " + (a !== b));
 
-// Arrays
-var array = [10, "Строка", true, 5, "Строка2"];
-console.log("array: " + array);
-console.log("array[0]: " + array[0]);
-console.log("array.length: " + array.length);
-console.log("[INFO] ACTION -> array.push(777)");
-// Arrays. Stack
-array.push(777);
-console.log("array: " + array);
-console.log("array.length: " + array.length);
-console.log("[INFO] ACTION -> array.pop()");
-array.pop();    // Returns the last element
-console.log("array: " + array);
-console.log("array.length: " + array.length);
-var p1 = array.pop();
-console.log("p1: " + p1);
-console.log("array: " + array);
-console.log("array.length: " + array.length);
-// Arrays. Queue
-console.log("[INFO] ACTION -> array.shift()");
-array.shift();    // Returns the 1st element
-console.log("array: " + array);
-console.log("array.length: " + array.length);
-console.log("[INFO] ACTION -> array.unshift(15)");
-array.unshift(15);    // Put element to the start
-console.log("array: " + array);
-console.log("array.length: " + array.length);
-// Arrays. Other methods
-console.log("array.indexOf(15): " + array.indexOf(15));
-console.log("array.join('-'): " + array.join('-'));
-console.log("array.join('===='): " + array.join('===='));
+// // Arrays
+// var array = [10, "Строка", true, 5, "Строка2"];
+// console.log("array: " + array);
+// console.log("array[0]: " + array[0]);
+// console.log("array.length: " + array.length);
+// console.log("[INFO] ACTION -> array.push(777)");
+// // Arrays. Stack
+// array.push(777);
+// console.log("array: " + array);
+// console.log("array.length: " + array.length);
+// console.log("[INFO] ACTION -> array.pop()");
+// array.pop();    // Returns the last element
+// console.log("array: " + array);
+// console.log("array.length: " + array.length);
+// var p1 = array.pop();
+// console.log("p1: " + p1);
+// console.log("array: " + array);
+// console.log("array.length: " + array.length);
+// // Arrays. Queue
+// console.log("[INFO] ACTION -> array.shift()");
+// array.shift();    // Returns the 1st element
+// console.log("array: " + array);
+// console.log("array.length: " + array.length);
+// console.log("[INFO] ACTION -> array.unshift(15)");
+// array.unshift(15);    // Put element to the start
+// console.log("array: " + array);
+// console.log("array.length: " + array.length);
+// // Arrays. Other methods
+// console.log("array.indexOf(15): " + array.indexOf(15));
+// console.log("array.join('-'): " + array.join('-'));
+// console.log("array.join('===='): " + array.join('===='));
+
+// Objects
+var tool = {
+  "name": "карандаш",
+  "color": "синий",
+  "diameter": 5,
+  "sharpened": true,
+  "array_example": [10, true, "String1", 1.23],
+  "object_example": { "k1": 10, "k2": false, "k3": "StrIngdd", "k4": 1.2345 }
+};   // Key - always string!
+console.log(tool);
+console.log(tool.array_example);
+console.log(tool.object_example);
+console.log(tool["name"]);    // Так можно указывать ключи, в которых есть проблем
+console.log("Object.keys(tool): " + Object.keys(tool));    // Get all keys of the object
+var tools = [
+  { "name": "карандаш", "color": "синий", "diameter": 5, "sharpened": true },
+  { "name": "карандаш", "color": "зелёный", "diameter": 5, "sharpened": true },
+  { "name": "маркер", "color": "зелёный", "diameter": 10, "sharpened": false }
+]
+console.log(tools);
+console.log(tools[1]);
+console.log(tools[1]["name"]);
