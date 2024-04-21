@@ -100,29 +100,45 @@
 // console.log(tools[1]["name"]);
 
 
-// Condition constructions
-var firstName = "Евгений";
-var maxLength = 16;
-if (firstName.length > maxLength) {
-  console.log("Ваше имя длинне " + maxLength + " символов");
+// // Condition constructions
+// var firstName = "Евгений";
+// var maxLength = 16;
+// if (firstName.length > maxLength) {
+//   console.log("Ваше имя длинне " + maxLength + " символов");
+// };
+
+// if (firstName.length > maxLength && firstName[0] == "А") {
+//   console.log("Ваше имя длинне " + maxLength + " символов. Имя начинается на 'А'");
+// };
+
+// if (firstName.length > maxLength) {
+//   console.log("Ваше имя длинне " + maxLength + " символов");
+// } else {
+//   console.log("Ваше имя короче или равно " + maxLength + " символов");
+// };
+
+// if (firstName.length > maxLength) {
+//   console.log("Ваше имя длинне " + maxLength + " символов");
+// } else if (firstName.length > 4 && firstName[0] == "Е") {
+//   console.log("Ваше имя длиннее 4 символов и начинается с 'Е'");
+// } else if (firstName.length > 10 && firstName[0] == "Д") {
+//   console.log("Ваше имя длиннее 10 символов и начинается с 'Д'");
+// } else {
+//   console.log("Ни одно из предыдущих условий не выполнилось")
+// };
+
+
+// Circles
+for (var count=0; count<10; count++) {
+  console.log("Число = " + count);
 };
 
-if (firstName.length > maxLength && firstName[0] == "А") {
-  console.log("Ваше имя длинне " + maxLength + " символов. Имя начинается на 'А'");
+var tools = ["ручка", "карандаш", "маркер", "ножницы", "клей", "точилка"];
+for (var i=0; i<tools.length; i++) {
+  console.log("i=" + i + "; tools[" + i + "] = " + tools[i]);
 };
 
-if (firstName.length > maxLength) {
-  console.log("Ваше имя длинне " + maxLength + " символов");
-} else {
-  console.log("Ваше имя короче или равно " + maxLength + " символов");
-};
-
-if (firstName.length > maxLength) {
-  console.log("Ваше имя длинне " + maxLength + " символов");
-} else if (firstName.length > 4 && firstName[0] == "Е") {
-  console.log("Ваше имя длиннее 4 символов и начинается с 'Е'");
-} else if (firstName.length > 10 && firstName[0] == "Д") {
-  console.log("Ваше имя длиннее 10 символов и начинается с 'Д'");
-} else {
-  console.log("Ни одно из предыдущих условий не выполнилось")
+var str2 = "ABCDEFG";
+for (var i=0; i<str2.length; i++) {
+  console.log(str2[i]);
 };
