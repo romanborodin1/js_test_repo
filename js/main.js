@@ -128,17 +128,39 @@
 // };
 
 
-// Circles
-for (var count=0; count<10; count++) {
-  console.log("Число = " + count);
-};
+// // Circles
+// for (var count=0; count<10; count++) {
+//   console.log("Число = " + count);
+// };
 
-var tools = ["ручка", "карандаш", "маркер", "ножницы", "клей", "точилка"];
-for (var i=0; i<tools.length; i++) {
-  console.log("i=" + i + "; tools[" + i + "] = " + tools[i]);
-};
+// var tools = ["ручка", "карандаш", "маркер", "ножницы", "клей", "точилка"];
+// for (var i=0; i<tools.length; i++) {
+//   console.log("i=" + i + "; tools[" + i + "] = " + tools[i]);
+// };
 
-var str2 = "ABCDEFG";
-for (var i=0; i<str2.length; i++) {
-  console.log(str2[i]);
+// var str2 = "ABCDEFG";
+// for (var i=0; i<str2.length; i++) {
+//   console.log(str2[i]);
+// };
+
+
+// Functions
+function helloWorld() {
+  console.log("Hello world!")
 };
+helloWorld();
+helloWorld();
+
+function myName(name) {
+  console.log("Привет, " + name + "!");
+};
+myName("Вася");
+myName("Даша");
+myName("Павел");
+
+function double(number) {
+  return number * 2;
+};
+var num = double(3);
+console.log(num);
+console.log(double(50));
