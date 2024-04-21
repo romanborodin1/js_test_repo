@@ -8,7 +8,8 @@
 // console.log("The 1st symbol of the mesage: " + message[0]);
 // console.log("'abc' + 5 = " + "abc" + 5);
 
-// // String
+
+// // Strings
 // console.log(message.toLowerCase());
 // console.log(message.toUpperCase());
 // console.log(message.slice(1));
@@ -20,7 +21,8 @@
 // var newString = firstChar + string.slice(1).toLowerCase();
 // console.log(newString);
 
-// // Boolean
+
+// // Booleans
 // var p = true;
 // var q = false;
 // var a = 10;
@@ -73,25 +75,54 @@
 // console.log("array.join('-'): " + array.join('-'));
 // console.log("array.join('===='): " + array.join('===='));
 
-// Objects
-var tool = {
-  "name": "карандаш",
-  "color": "синий",
-  "diameter": 5,
-  "sharpened": true,
-  "array_example": [10, true, "String1", 1.23],
-  "object_example": { "k1": 10, "k2": false, "k3": "StrIngdd", "k4": 1.2345 }
-};   // Key - always string!
-console.log(tool);
-console.log(tool.array_example);
-console.log(tool.object_example);
-console.log(tool["name"]);    // Так можно указывать ключи, в которых есть проблем
-console.log("Object.keys(tool): " + Object.keys(tool));    // Get all keys of the object
-var tools = [
-  { "name": "карандаш", "color": "синий", "diameter": 5, "sharpened": true },
-  { "name": "карандаш", "color": "зелёный", "diameter": 5, "sharpened": true },
-  { "name": "маркер", "color": "зелёный", "diameter": 10, "sharpened": false }
-]
-console.log(tools);
-console.log(tools[1]);
-console.log(tools[1]["name"]);
+
+// // Objects
+// var tool = {
+//   "name": "карандаш",
+//   "color": "синий",
+//   "diameter": 5,
+//   "sharpened": true,
+//   "array_example": [10, true, "String1", 1.23],
+//   "object_example": { "k1": 10, "k2": false, "k3": "StrIngdd", "k4": 1.2345 }
+// };   // Key - always string!
+// console.log(tool);
+// console.log(tool.array_example);
+// console.log(tool.object_example);
+// console.log(tool["name"]);    // Так можно указывать ключи, в которых есть проблем
+// console.log("Object.keys(tool): " + Object.keys(tool));    // Get all keys of the object
+// var tools = [
+//   { "name": "карандаш", "color": "синий", "diameter": 5, "sharpened": true },
+//   { "name": "карандаш", "color": "зелёный", "diameter": 5, "sharpened": true },
+//   { "name": "маркер", "color": "зелёный", "diameter": 10, "sharpened": false }
+// ]
+// console.log(tools);
+// console.log(tools[1]);
+// console.log(tools[1]["name"]);
+
+
+// Condition constructions
+var firstName = "Евгений";
+var maxLength = 16;
+if (firstName.length > maxLength) {
+  console.log("Ваше имя длинне " + maxLength + " символов");
+};
+
+if (firstName.length > maxLength && firstName[0] == "А") {
+  console.log("Ваше имя длинне " + maxLength + " символов. Имя начинается на 'А'");
+};
+
+if (firstName.length > maxLength) {
+  console.log("Ваше имя длинне " + maxLength + " символов");
+} else {
+  console.log("Ваше имя короче или равно " + maxLength + " символов");
+};
+
+if (firstName.length > maxLength) {
+  console.log("Ваше имя длинне " + maxLength + " символов");
+} else if (firstName.length > 4 && firstName[0] == "Е") {
+  console.log("Ваше имя длиннее 4 символов и начинается с 'Е'");
+} else if (firstName.length > 10 && firstName[0] == "Д") {
+  console.log("Ваше имя длиннее 10 символов и начинается с 'Д'");
+} else {
+  console.log("Ни одно из предыдущих условий не выполнилось")
+};
